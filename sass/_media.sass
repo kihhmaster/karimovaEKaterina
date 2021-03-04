@@ -1,0 +1,121 @@
+@import "vars"
+
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+	.top-line_content
+		ul
+			padding-top: $gutter*2
+			padding-left: $gutter
+	.table-list
+		li
+			span
+				
+				font-size: 16px
+				padding-top: 5px
+				padding-left: 4px
+				i
+					font-size: 14px
+
+// ≥992px
++media-breakpoint-down(md)
+	.review
+		line-height: 1.2
+	.pricing-wrapper
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+	.container-fluid_pricing
+		padding: 0
+	.table-list
+		li
+			span
+				font-size: 12px
+				padding-top: 5px
+				padding-left: 4px
+				i
+					font-size: 10px
+	
+				// .fa-clock-o
+				// 	display: none
+	.pricing-table-title
+		margin: 0
+	.unlimited
+		font-size: 8px
+		padding-top: 5px
+		padding-left: 4px
+		i
+			font-size: 10px	
+	.slider-owl-carousel
+		max-width: 100%
+	.modal
+		width: 100%
+		padding: 10px
+
+// ≥768px
++media-breakpoint-down(sm)
+	.pricing-table
+		font-size: 12px
+		line-height: 1.2
+	.pricing-wrapper
+		padding: 0
+	.pricing-table-title
+		font-size: 24px
+		padding: $gutter/2 0
+	.container-fluid_reviews
+		padding: 0 $gutter/2
+	.container-fluid_slider-fotorama
+		padding: $gutter/3
+	.slider-fotorama
+		padding: 0 0 $gutter/2
+	.review
+		line-height: 1.2
+		&-header
+			font-size: 18px
+		&-text
+			font-size: 14px
+// ≥576px
++media-breakpoint-down(xs)
+	.top-line_content
+		font-size: 60px
+	.container-fluid_pricing
+		padding: $gutter/3
+	.container-fluid_slider
+	.table-list
+		li
+			font-size: 14px
+			span
+				white-space: nowrap
+				font-size: 12px
+				padding-top: 5px
+				padding-left: 4px
+				p
+					display: none
+	.pricing-table-title
+		font-size: 24px
+		padding: $gutter/3 0
+	.contact_footer
+		font-size: 14px
+	.wrapper_review
+		height: 320px
+
+					
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)

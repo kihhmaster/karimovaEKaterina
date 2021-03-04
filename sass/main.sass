@@ -1,0 +1,483 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+*
+	box-sizing: border-box 
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	font-size: 20px
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+a
+	color: #000
+	&:hover, &:focus
+		color: #de0036
+		text-decoration: underline
+
+.container-fluid
+	max-width: 1300px
+
+	padding: 0 $gutter
+
+.section_1
+	height: 650px
+.top-line_telefon
+	position: absolute
+	top: $gutter/3
+	right: $gutter
+	a
+		i
+			margin-right: 5px
+.top-line_icons
+	background-color: rgba(15,15,15, 0.5)
+	padding: $gutter*2 10px 10px 10px
+	// padding: 10px
+	text-align: center
+	height: 650px
+	position: absolute
+	left: 0
+	margin-right: $gutter/2
+	ul
+		display: flex
+		flex-flow: column wrap
+		align-content: flex-end
+		justify-content: center
+
+.top-line_content
+	font-family: anton-e, sans-serif
+	font-size: 68px
+	font-weight: 400
+	line-height: 1.1
+	ul
+		display: flex
+		flex-direction: column
+		padding-top: $gutter*2
+		padding-left: $gutter
+		.red-color
+			color: #de0036
+.top_line
+	.top-line_button
+		margin: $gutter
+.fadeInRightBig
+	animation-duration: 5s
+	animation-delay: 3s
+	animation-iteration-count: 1
+.shake
+	animation-duration: 10s
+	animation-delay: 5s
+	animation-iteration-count: infinite
+
+#bookform-embedded-widget-20811
+	max-width: 450px
+	max-height:
+	margin-left: auto
+	margin-right: auto
+	margin-top: $gutter
+
+#bookform_castom
+	display: none
+
+.button
+	display: inline-block
+	border: none
+	color: #262626
+	font-family: $default-font2
+	text-decoration: none
+	border: 1px solid #000
+	text-transform: uppercase
+	background-color: #fff
+	padding: 11px 20px
+	font-size: 15px
+	font-weight: 400
+	letter-spacing: 3px
+	border-radius: 0px
+	text-align: center
+	position: relative
+	outline: none
+	transition: background-color .1s ease
+	cursor: pointer
+	&::after
+		transition: background-color .2s ease
+		position: absolute
+		content: ''
+		height: 4px
+		bottom: 0
+		width: 100%
+		opacity: .18
+		border-bottom-left-radius: 2px
+		border-bottom-right-radius: 2px
+		left: 0
+	&:focus, &:hover
+		text-decoration: none
+		color: #000
+	&:hover
+		background-color: lighten($accent, 5%)
+		&::after
+			opacity: .22
+	&:active
+		background-color: darken($accent, 5%)
+		&::after
+			opacity: .32
+
+//section_2
+.text_price
+
+	p
+		margin: $gutter 0
+		text-align: center
+		font-size: 32px
+
+.tabs_caption
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+	list-style: none
+	position: relative
+	margin: 0 auto
+	padding: 0
+
+.tabs_content
+	// border: solid 3px #000
+	font-family:
+	max-width: 900px
+	margin-left: auto
+	margin-right: auto
+	.row
+		display: flex
+		justify-content: space-between
+
+		ul
+			width: 100%
+			margin: 0
+			padding: $gutter/2 $gutter
+			list-style: none
+			p
+				padding-left: $gutter/2
+				margin: 0
+				span
+					font-size: 20px
+
+			li
+				display: flex
+				justify-content: space-between
+				p
+					padding: 0 10px
+					margin: 2px
+					i
+						font-size: 14px
+			li:nth-child(odd)
+				background-color: lighten($accent, 5%)
+.tabs_content
+	display: none
+.tabs_content.active
+	display: block
+
+///Footer
+
+.my_footer
+	background-color: lighten($accent, 5%)
+.main-footer_wrapper
+
+.main_footer
+	padding: $gutter
+	padding-bottom: $gutter*2
+	display: flex
+	justify-content: space-around
+	.row
+		display: flex
+		justify-content: center
+.column_footer
+	margin: 0 $gutter/2
+.logo_footer
+	margin: 0
+.logo_img_footer
+	width: 90px
+	height: 90px
+.social-footer
+	ul
+		display: flex
+		justify-content: flex-start
+		list-style: none
+		padding: 0
+		li
+			a
+				color: #000
+				transition: color .25s ease, background-color .25s ease
+				margin-bottom: 0
+				font-size: 24px
+				&:hover
+					color: $accent2
+				i.fa
+					font-size: 18px
+					padding: 6px
+
+.map
+	max-height: 200px
+	opacity: .7
+	transition: opacity .5s ease
+	&:hover
+		opacity: 1
+
+.contact_footer
+	font-size: 16px
+	line-height: 1.2
+	p
+		margin-bottom: 8px
+		i
+			font-size: 18px
+
+.beauty_web_site
+	font-size: 14px
+	text-align: center
+	margin: 0
+	padding-bottom: $gutter
+
+// price codepan
+
+.section_2
+	color: #000
+	font-size: 60.5%
+	font-family: "Roboto", Arial, Helvetica, Sans-serif, Verdana
+
+.section-2_wrapper
+	background: rgba(15,15,15, 0.5)
+	background-blend-mode: overlay
+
+ul
+	list-style-type: none
+
+.pricing-table-title
+	text-transform: uppercase
+	font-weight: 700
+	font-size: 2.6em
+	color: #fff
+	padding-top: $gutter
+	text-align: center
+	margin-bottom: $gutter/2
+	text-shadow: 0 1px 1px rgba(15,15,15, 0.9)
+	a
+		font-size: 0.6em
+
+.clearfix:after
+	content: ""
+	display: block
+	height: 0
+	width: 0
+	clear: both
+
+.pricing-wrapper
+	display: flex
+	justify-content: center
+	padding: $gutter/2
+	width: 100%
+	margin: 40px auto 0
+.pricing-table
+	margin: 0 10px $gutter 10px
+	text-align: center
+	max-width: 550px
+	float: left
+	box-shadow: 0 0 15px rgba(230, 222, 222, 0.6)
+	transition: all 0.25s ease
+	&:hover
+.pricing-title
+	color: #fff
+	background: #de0036
+	padding: 20px 0
+	font-size: 2em
+	text-transform: uppercase
+	text-shadow: 0 1px 1px rgba(230, 222, 222, 0.6)
+
+.pricing-table
+	&.recommended
+		.pricing-title, .pricing-action
+			background: #f5dfd0
+ul
+	padding: 0
+
+.pricing-table
+	h3
+		margin: 0
+	ul
+		margin-bottom: 0
+	.table-list
+		li
+			display: flex
+			justify-content: space-between
+
+.table-list
+	text-align: left
+	background: #fff
+	color: #403d3a
+	li
+		font-size: 1.4em
+		font-weight: 700
+		padding: 10px
+    // &:before
+    //   content: "\f00c"
+    //   font-family: "FontAwesome"
+    //   color: #3fab91
+    //   display: inline-block
+    //   position: relative
+    //   right: 5px
+    //   font-size: 16px
+		span
+			font-weight: 400
+			&.unlimited
+				color: #fff
+				background: #de0036
+				font-size: 0.9em
+				padding: 5px 7px
+				display: inline-block
+				border-radius: 38px
+		&:nth-child(2n)
+			background: #f0f0f0
+
+.table-buy
+	background: #fff
+	padding: 15px
+	text-align: center
+	overflow: hidden
+	.pricing-action
+		float: right
+		color: #fff
+		background: #de0036
+		padding: 10px 16px
+		border-radius: 2px
+		font-weight: 700
+		font-size: 1.4em
+		text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4)
+		transition: all 0.25s ease
+		&:hover
+			background: lighten(#de0036, 5%)
+
+.recommended .table-buy .pricing-action:hover
+	background: lighten(#f5dfd0, 5%)
+
+.button-manicure
+
+//fotorama
+
+.container-fluid_slider-fotorama
+	padding: 0
+.section_slider
+	margin-left: auto
+	margin-right: auto
+	padding: 0
+	background: #f5dfd0
+.slider-fotorama
+
+	padding: $gutter
+	width: 100%
+	height: 100%
+	top: 0
+	left: 0
+	display: flex
+	align-items: center
+	align-content: center
+	justify-content: center
+	overflow: auto
+
+.fotorama
+
+#bookform_castom
+	display: none
+.modal
+	background-color: #f5dfd0
+.services-list-default
+	background-color: #f5dfd0
+
+// owl-carusel
+.reviews_text
+	font-size: 36px
+	margin: 0
+.reviews_text_owl
+	color: #a9a9a9
+.wrapper_review
+	max-width: 100%
+	height: 420px
+	overflow: auto
+	background-position: bottom right
+	background-repeat: no-repeat
+	background-size: cover
+	background-color: rgba(15,15,15, 1)
+	background-blend-mode: overlay
+	position: relative
+	overflow-y: hidden
+.slider-owl-carousel
+	max-width: 60%
+	height: 420px
+.container-fluid_reviews
+	display: flex
+	align-items: center
+	align-content: center
+	justify-content: center
+	po
+
+.b-container
+	width: 200px
+	height: 150px
+	background-color: #ccc
+	margin: 0 auto
+	padding: 10px
+	font-size: 30px
+	color: #fff
+
+.b-popup
+	width: 100%
+	min-height: 100%
+	background-color: rgba(0,0,0,0.5)
+	overflow: hidden
+	position: fixed
+	top: 0
+
+.b-popup .b-popup-content
+	margin: 40px auto 0 auto
+	width: 100px
+	height: 40px
+	padding: 10px
+	background-color: #c5c5c5
+	border-radius: 5px
+	box-shadow: 0 0 10px #000
+
+.review
+	&-header
+		font-family: Roboto,Arial,Helvetica,Sans-serif,Verdana
+		font-size: 24px
+		font-weight: bold
+		color: #a9a9a9
+
+	&-date
+		font-family: Roboto,Arial,Helvetica,Sans-serif,Verdana
+		font-size: 14px
+		margin-top: 2px
+		color: #888
+	&-stars
+		margin: $gutter/2 0 $gutter
+		font-size: 14px
+		color: $accent2
+		.fa
+			margin: 0 2px
+	&-text
+
+		color: #a9a9a9
+		font-weight: 300
+
+@import "media" // Always at the end
